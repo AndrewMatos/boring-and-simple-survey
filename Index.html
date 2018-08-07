@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey page</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<div class="main">
+	<div id="header">
+	<h1 id="title">Movie preferences</h1>
+	<p id="description">what kind of movies do you want to see?</p>
+	</div>
+	<form id="survey-form">
+		<label id="name-label">Name:
+			<input type="text" required id="name" class="text" placeholder="enter your name">
+		</label> 
+		<br>
+		<br>
+		<label id="email-label">Email:
+			<input type="text" required id="email" class="text" placeholder="enter your email">
+		</label>
+		<br> 
+		<br>
+		<label id="number-label">Age  :
+			<input type="number" required id="age" class="text" placeholder="age" min="1" max="125">
+		</label> 
+		<br>
+		<br>
+		<label > Where do you watch movies?
+			<select id="dropdown">
+				<option value="TV">In TV</option>
+				<option value="cinema">In cinema</option>
+				<option value="computer">In my computer</option>
+			</select>
+		</label>
+		<br>
+		<br>
+		<label id="favorite">Favorite genere: </label>
+		<div id="radio">
+			<label><input value="action" type="radio" name="genere" > Action</label>
+			<br>
+			<label><input value="horror" type="radio" name="genere"> Horror</label>
+			<br>
+			<label><input value="romance" type="radio" name="genere"> romance</label>
+			<br>
+			<label><input value="kids" type="radio" name="genere"> kids</label>
+			<br>
+			<label><input value="owo" type="radio" name="genere"> furry</label>
+		</div>
+		<br>
+		<br>
+		<label id="good">what makes a good<br>movie for you?</label>
+		<div id="checkboxes">
+			<label><input type="checkbox" value="direction">good direction</label>
+			<br>
+			<label><input type="checkbox" value="artsyle">good artstyle</label>
+			<br>
+			<label><input type="checkbox" value="script">good script</label>
+			<br>
+			<label><input type="checkbox" value="soundtrack">good soudtrack</label>
+		</div>
+			<br>
+			<br>
+	    <label>Additional Comments <input type="textarea"></label>
+	    <br>
+	    <br>
+	    <button type="submit" id="submit">Submit</button>
+	</form>
+</div>
+</body>
+</html>
